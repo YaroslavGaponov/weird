@@ -1,5 +1,5 @@
 {
-  "name": "weird",
+  "name": "jsweird",
   "version": "1.0.0",
   "description": "Translate from normal javascript to weird javascript",
   "main": "index.js",
