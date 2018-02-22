@@ -1,0 +1,23 @@
+{
+  "name": "weird",
+  "version": "1.0.0",
+  "description": "Translate from normal javascript to weird javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaroslavGaponov/weird.git"
+  },
+  "keywords": [
+    "weird",
+    "javascript"
+  ],
+  "author": "Yaroslav Gaponov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YaroslavGaponov/weird/issues"
+  },
+  "homepage": "https://github.com/YaroslavGaponov/weird#readme"
+}
