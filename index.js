@@ -26,6 +26,7 @@ function buildSymbol(c) {
             _buildSymbol('([]+[])[' + string('constructor') + ']+[]', c) ||
             _buildSymbol('([]+[])[' + string('constructor') + ']+[]', c) ||
             _buildSymbol('+[]['+ string('constructor')+']((' + buildNumber(1) + ')+(' +  buildSymbol('e') +  ')+(' + buildNumber(5) + ')+(' + buildNumber(0) + ')+(' + buildNumber(0) + '))+[]', c) ||
+            (c >= '0' && c <= '9' && _buildSymbol('('+buildNumber(c.charCodeAt(0) - '0'.charCodeAt(0))+')[' + string('toString') + '](' +  buildNumber(36) + ')', c)) ||            
             (c >= 'a' && c <= 'z' && _buildSymbol('('+buildNumber(10 + c.charCodeAt(0) - 'a'.charCodeAt(0))+')[' + string('toString') + '](' +  buildNumber(36) + ')', c)) ||
             '`' + c + '`'
     ;
