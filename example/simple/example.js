@@ -1,4 +1,4 @@
-const weird = require('../index.js');
+const weird = require('../../index.js');
 
 const normalJavaScript = `
     for(let i=0; i<10; i++)

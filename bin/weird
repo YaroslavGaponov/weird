@@ -13,7 +13,7 @@ const srcFile = process.argv.pop();
 
 console.log(`convert from ${srcFile} to ${trgFile}`);
 const source = fs.readFileSync(srcFile, 'utf8');
-const target = weird(source);
+const target = 'global.require=require;'+weird(source);
 console.log(`length from ${source.length} to ${target.length}  [${(100*target.length/source.length).toFixed(2)}%]`)
 fs.writeFileSync(trgFile, target);
 console.log('done');
