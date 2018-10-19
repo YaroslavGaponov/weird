@@ -3,6 +3,13 @@ Weird
 
 Translate from normal javascript to weird javascript 
 
+## Weird Cli
+```bash
+weird source.js  target.js
+length from 1666 to 1643583  [98654.44%]
+done
+```
+
 ## Example
 
 ```bash
@@ -17,7 +24,7 @@ const normalJavaScript = `
         console.log('hello world ', i)
 `;
 
-const weirdJavaScript = weird(normalJavaScript);
+const weirdJavaScript = new Function(weird(normalJavaScript));
 
 console.log('----source-----');
 console.log(weirdJavaScript.toString());
@@ -49,3 +56,5 @@ hello world  7
 hello world  8
 hello world  9
 ```
+
+

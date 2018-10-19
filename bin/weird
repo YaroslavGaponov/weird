@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const weird = require('../index');
+
+if (process.argv.length <= 2) {
+    console.log('help: weird [source] [target]');
+    process.exit(0);
+}
+
+const trgFile = process.argv.pop();
+const srcFile = process.argv.pop();
+
+console.log(`convert from ${srcFile} to ${trgFile}`);
+const source = fs.readFileSync(srcFile, 'utf8');
+const target = weird(source);
+console.log(`length from ${source.length} to ${target.length}  [${(100*target.length/source.length).toFixed(2)}%]`)
+fs.writeFileSync(trgFile, target);
+console.log('done');
