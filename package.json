@@ -1,6 +1,6 @@
 {
   "name": "jsweird",
-  "version": "1.0.2",
+  "version": "2.0.2",
   "description": "Translate from normal javascript to weird javascript",
   "main": "index.js",
   "bin": {
